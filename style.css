@@ -1,0 +1,193 @@
+			@font-face{
+				font-family:"comen";
+				src: url(../font/comen.TTF);
+			}
+			@font-face{
+				font-family:"cod";
+				src: url(../font/call.otf);
+			}
+			@font-face{
+				font-family:"korner";
+				src: url(../font/korner.ttf);
+			}
+			@font-face{
+				font-family:"lt";
+				src: url(../font/lt.ttf);
+			}
+			@font-face{
+				font-family:"shak";
+				src: url(../font/shak.ttf);
+			}
+			@font-face{
+				font-family:"buble";
+				src: url(../font/buble.TTF);
+			}
+			@font-face{
+				font-family:"lemon";
+				src: url(../font/lemon.otf);
+			}
+       *{
+        margin:0;
+        padding:0;
+       }
+        .container{
+         width:100%;
+         height:100vh;
+         background:#EFEFEF;
+         transition: 2s;
+        }
+        .div{
+         position:absolute;
+         width:10px;
+         height:30px;
+         border-radius:10px;
+         background:white;
+         animation: jatuh 1s infinite;
+        }
+        @keyframes jatuh{
+         0%{
+          margin-top:0;
+          opacity:1;
+         }
+         100%{
+          margin-top:90vh;
+          opacity:0;
+         }
+        }
+        .conten{
+         width:100%;
+         height:100vh;
+         background:rgba(0,0,0,0.1);
+         position:absolute;
+         z-index:959;
+         display:flex;         
+        }
+        .conten::after{
+        	position:absolute;
+        	content:"";
+        	display:block;
+        	width:100%;
+        	height:150px;
+        	background:#3F3F3F;
+        	bottom:0;
+        	opacity:40%;
+        	border-top-right-radius:100%;
+        	border-top-left-radius:100%;
+        
+        }
+        .conten::before{
+        	position:absolute;
+        	content:"";
+        	display:block;
+        	width:100%;
+        	height:150px;
+        	background:#3F3F3F;
+        	bottom:0;
+        	opacity:40%;
+        	border-top-left-radius:100%;
+        	border-top-right-radius:100%;
+        	border-bottom-left-radius:100%;
+        	border-bottom-right-radius:100%;
+        }       
+        .cntn{
+         margin:auto;
+      
+        }
+        .cntn::before{
+        	content:"";
+        	display:block;
+        	width:55px;
+        	height:55px;
+        	position:absolute;
+        	background:#E3E3E3;
+        	border-radius:50%;
+        	top:35px;
+        	left:35px;
+        	z-index:-9999;
+        	transition: 10s;
+        	box-shadow:0 0 50px 30px #C0BEBE;
+       		animation: drk 50s ease-in ;
+   
+        }
+        @keyframes drk{
+        	0%{              
+        		box-shadow:0 0 50px 30px #545252;
+        		background:#545252;
+        	}
+        	50%{       
+        		box-shadow:0 0 50px 30px #C0BEBE;
+        		background:#E3E2E2;
+        	}
+        	100%{        	
+        		box-shadow:0 0 50px 30px #C0BEBE;
+        		background:#E3E2E2;
+        	}
+        }
+        .hi{
+         color:#eee;
+         font-size:80px;
+         font-family:shak;
+         
+        }
+        span{
+        	color:#FF0098;
+        	display:inline-block;
+ 						padding:5px;
+        	transform:translateY(100%) rotate(90deg);
+        	transition:1s;        	
+        	opacity:0;
+        	}
+        .fade{
+        	transform:translateY(0%) rotate(0deg);
+        	opacity:1;
+        	
+        }
+        .animasi{
+       
+        	animation-delay:1s;
+        	animation: loncat 2s ease-out infinite;
+   
+        }
+        
+        @keyframes loncat{
+        	0%{
+        		text-shadow: 0px 0px 0px  #FFE800;        
+        		color:#909090 ;
+        		transform:translateY(0%) rotate(0deg);
+        	}
+        	25%{
+        		color:#909090 ;
+        		text-shadow: 0px 0px 5px #FFE800;        
+        		transform:translateY(-100%) rotate(0deg);
+        	}
+        	50%{
+        		color:#fff;
+        		text-shadow: 0px 0px 1px  #fff,
+        				4px 4px 1px  #008EFF,
+        		 		-4px -4px 1px #FF00B8,
+        				6px 6px 1px  #008EFF,
+        				-6px -6px 1px  #FF00B8;
+        		transform:translateY(-100%) rotate(0deg);
+        	}
+        	75%{
+        		color:#909090;
+        		text-shadow: 0px 0px 5px  #FFE800;
+        		transform:translateY(-100%) rotate(0deg);
+        	}
+        	100%{
+        		color:#909090;
+        		text-shadow: 0px 0px 0px  rgb(255,255,255);        
+        		transform:translateY(0) rotate(0deg);
+        	}
+        }
+  		.btn{
+  				width:300px;
+  				height:100px;
+  				font-size:40px;
+  				font-family:korner;
+  				color:white;
+  				background:#7F7F7F;
+  				border-radius:10px;
+  				border:2px solid white;
+  				transition: 1s;
+  		}
