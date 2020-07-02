@@ -1,31 +1,14 @@
-			@font-face{
-				font-family:"comen";
-				src: url(comen.TTF);
-			}
-			@font-face{
-				font-family:"cod";
-				src: url(call.otf);
-			}
+	
 			@font-face{
 				font-family:"korner";
 				src: url(korner.ttf);
 			}
-			@font-face{
-				font-family:"lt";
-				src: url(lt.ttf);
-			}
+			
 			@font-face{
 				font-family:"shak";
 				src: url(shak.ttf);
 			}
-			@font-face{
-				font-family:"buble";
-				src: url(buble.TTF);
-			}
-			@font-face{
-				font-family:"lemon";
-				src: url(lemon.otf);
-			}
+			
        *{
         margin:0;
         padding:0;
